@@ -48,9 +48,11 @@ function App() {
                   selectedTab={selectedTab}
                   setSelectedTab={setSelectedTab}
                 />
-                {selectedTab === "Notes"
-                  ? data && <NotesSection data={data} setData={updateData} />
-                  : data && <TrashSection data={data} setData={updateData} />}
+                {selectedTab === "Notes" ? (
+                  <NotesSection data={data} setData={updateData} />
+                ) : (
+                  <TrashSection data={data} setData={updateData} />
+                )}
               </MainContainer>
             </AuthenticatedRoute>
           }
