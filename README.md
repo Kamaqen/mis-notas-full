@@ -118,3 +118,6 @@ Feel free to customize this README to include any additional information specifi
 The backend uses Action Cable for real-time features, such as websockets.
 The backend project is configured to use Puma as the application server.
 The frontend is already connected to the backend for making requests and both need to be running for the app to work.
+The default user data is:
+- email: test@mail.com
+- password: 123123
